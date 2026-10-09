@@ -2,14 +2,23 @@ using UnityEngine;
 
 public interface ActionMachine 
 {
-    void craftMoney();
+    void givemoney();
 
 
 }
-
-public interface GetCoin
+public interface ISpeedBoostable
 {
-    void getCoin();
+    bool IsBoosted { get; }
+    void ApplySpeedBoost(float multiplier, float duration);
 }
+public interface IMoneyManager
+{
+    int Money { get; }
+
+    void AddMoney(int amount);
+    bool SpendMoney(int amount);
+}
+
+
 
 
