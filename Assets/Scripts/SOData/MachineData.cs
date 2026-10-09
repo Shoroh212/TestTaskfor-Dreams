@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[CreateAssetMenu(fileName = "MachineData", menuName = "ScriptableObjects/MachineData", order = 1)]
 public class MachineData : ScriptableObject
 {
     public bool Locked; 
